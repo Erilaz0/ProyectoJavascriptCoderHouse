@@ -1,0 +1,56 @@
+
+
+.carrito{ background-color:darkgray ;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        z-index: 7;
+        margin-top: 570px;
+        max-height: 500px;
+        overflow: scroll;
+        overflow-x: hidden;
+        border-radius: 10px;
+        scrollbar-color: red red;
+        
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 5px 0 5px rgba(0, 0, 0, 0.3);
+        
+        
+
+       
+    
+    
+       .carritocontainer{width: 100%;
+                         height: 10%;
+                         display: flex;
+                         border-bottom: 2px solid dimgray;
+                         
+                         
+                         
+                     
+
+
+
+
+
+                        .foto_carrito{width: 20%;
+                                     height: 100%;
+            
+            
+            
+            
+                                    }
+
+                        
+                        .nombre_carrito{margin-left: 20%;
+                                        font-size: 23px;
+                                        margin-top: 20px;
+                        }
+                        .precio_carrito{margin-left: 5%;
+                                        font-size: 23px;
+                                        margin-top: 20px;
+                        }
+
+
+
+
+}}

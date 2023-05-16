@@ -1,0 +1,412 @@
+@charset "UTF-8";
+.navbar {
+  background-color: #2B2B2B !important;
+  height: 60px !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-top: 90px; }
+  .navbar .container-fluid {
+    background-color: #2B2B2B !important; }
+    .navbar .container-fluid .nav-link {
+      color: #E1E1E1 !important; }
+
+.nav-item:hover {
+  background-color: #5B5B5B; }
+
+@keyframes dm {
+  0% {
+    width: 1%; }
+  100% {
+    width: 50%; } }
+
+.search {
+  box-sizing: content-box;
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2B2B2B;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+  .search .logo {
+    height: 100px;
+    width: 15%;
+    margin-left: 5%;
+    margin-top: -20px; }
+  .search .search_bar {
+    animation: dm 2s;
+    animation-fill-mode: forwards;
+    height: 100%;
+    margin-left: 5%;
+    border: 3px solid #E5E5E5;
+    border-radius: 70px;
+    font-size: 25px; }
+  .search .search_button {
+    margin-left: 1%;
+    border-radius: 50%;
+    width: 3.8%;
+    border: none;
+    background-image: url("../imagenes/piñon.png");
+    background-size: 100% 100%;
+    animation: rotate 3s;
+    transition-duration: 2s; }
+  .search .carro_logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 15%;
+    background-image: url("../imagenes/carro.png");
+    background-size: cover;
+    border: none; }
+  .search .search_button:hover {
+    transform: rotate(360deg); }
+
+.slidercuatri {
+  height: 700px;
+  width: 100%;
+  display: flex; }
+  .slidercuatri .cuatri1 {
+    width: 100%;
+    height: 100%; }
+
+.slider img.active {
+  opacity: 1; }
+
+@media only screen and (max-width: 993px) {
+  .navbar {
+    background-color: #2B2B2B !important;
+    height: 60px !important; } }
+
+.separationcero {
+  width: 100%;
+  height: 70px;
+  background-color: #2B2B2B; }
+
+.destacados {
+  color: #E1E1E1; }
+
+.global {
+  background-image: url("../imagenes/fondo_titulo.png");
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto; }
+  .global .hide_separation {
+    padding-top: 10%; }
+  .global .asociacion_title {
+    margin-left: 30%;
+    width: 41%;
+    margin-bottom: 1%;
+    padding: 10px;
+    color: #5EFF21;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3); }
+  .global .separation {
+    width: 80%;
+    margin-left: 9%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 2px solid #E0E0E0;
+    border-radius: 1%;
+    animation: sli 1s; }
+  .global .asociaciones {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    animation: asoc 2s;
+    transition-duration: 1s; }
+
+.separationdos {
+  width: 100%;
+  height: 60px;
+  margin-top: 10%;
+  background-color: #2B2B2B; }
+
+@keyframes asoc {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.asociaciones:hover {
+  width: 130px;
+  height: 130px; }
+
+@keyframes rotate {
+  0% {
+    margin-left: 10%;
+    opacity: 0;
+    transform: rotate(0deg); }
+  100% {
+    margin-left: 1%;
+    opacity: 1;
+    transform: rotate(360deg); } }
+
+@keyframes sli {
+  0% {
+    margin-left: -1000px; }
+  100% {
+    margin-left: 9%; } }
+
+@keyframes slim {
+  0% {
+    margin-right: -1000px; }
+  100% {
+    margin-right: 16%; } }
+
+.supermoto {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  margin-bottom: -30px; }
+  .supermoto .second_moto {
+    width: 100%;
+    height: 500px; }
+
+body {
+  background-color: #EEEEEE; }
+
+.t {
+  padding-left: 15%;
+  height: auto;
+  background-color: #343434; }
+  .t .titpad .titulop {
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    animation: asoc 2s;
+    width: 78%;
+    border-bottom: 3px solid #343434;
+    color: green; }
+
+.globaldos {
+  width: 100%;
+  margin-top: -10px;
+  height: 1000px;
+  display: flex;
+  background-color: #EEEEEE;
+  background-image: url("../imagenes/fondo_titulo.png");
+  background-attachment: fixed;
+  background-size: cover; }
+  .globaldos .imgProdCost {
+    height: 70%;
+    width: 20%;
+    margin-left: 12%;
+    border-radius: 20px;
+    margin-top: 60px; }
+  .globaldos .productos {
+    padding-top: 0%;
+    margin-left: 5%;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    animation: asoc 1s;
+    margin-bottom: 10%;
+    height: 700px;
+    overflow: auto; }
+    .globaldos .productos .productI {
+      height: 50%;
+      width: 250px;
+      animation: asoc 1s;
+      background-color: white;
+      margin-bottom: 2%;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 5px 0 5px rgba(0, 0, 0, 0.3);
+      transition-duration: 0.5s; }
+      .globaldos .productos .productI .foto {
+        width: 100%;
+        height: 200px;
+        border-bottom: 1px solid #E1E1E1;
+        animation: asoc 1s;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: none; }
+      .globaldos .productos .productI .titulo_producto {
+        margin-left: 3%;
+        font-size: 20px; }
+      .globaldos .productos .productI .precio {
+        margin-left: 3%;
+        font-size: 20px;
+        animation: asoc 1.5s;
+        color: green; }
+      .globaldos .productos .productI .unidad {
+        width: 100%;
+        margin-left: 3%; }
+      .globaldos .productos .productI .carroappend {
+        width: 100%;
+        margin-top: 10px;
+        height: 40px;
+        animation: asoc 1.5s;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none !important;
+        background: url("../imagenes/carro1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #343434; }
+
+@keyframes asoc {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.productI:hover {
+  margin-top: 0%;
+  border: 3px solid #343434; }
+
+.presentacion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: url("../imagenes/fondoPre.png");
+  background-attachment: fixed;
+  background-size: cover; }
+  .presentacion .surtidor {
+    width: 15%;
+    height: 450px;
+    border-radius: 20px;
+    animation-name: sur;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    transition-duration: 2s;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3); }
+  .presentacion .pioneros {
+    width: 50%;
+    height: 20%;
+    border: 2px solid #bbb;
+    color: #894F01;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    border-radius: 20px;
+    animation-name: aparecerdos;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; }
+
+.fotos_usados {
+  margin-left: -50%;
+  width: 50%; }
+  .fotos_usados .circ {
+    margin-left: 10%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), 10px 0 10px rgba(0, 0, 0, 0.3); }
+  .fotos_usados .foto-1 {
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; }
+  .fotos_usados .foto-2 {
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    animation-name: aparecertres;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; }
+  .fotos_usados .foto-3 {
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    animation-name: aparecercuatro;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused; }
+
+.surtidor:hover {
+  height: 500px;
+  width: 17%; }
+
+@keyframes sur {
+  0% {
+    margin-left: -1000px; }
+  100% {
+    margin-left: 15%; } }
+
+@keyframes aparecer {
+  0% {
+    margin-top: 15%;
+    opacity: 0; }
+  100% {
+    border-radius: 20px;
+    height: 70%;
+    margin-top: 15%; } }
+
+@keyframes aparecerdos {
+  0% {
+    right: -1000px;
+    opacity: 0; }
+  100% {
+    right: 20%;
+    opacity: 1; } }
+
+@keyframes aparecertres {
+  0% {
+    margin-top: 15%;
+    opacity: 0; }
+  100% {
+    border-radius: 20px;
+    height: 70%;
+    margin-top: 15%; } }
+
+@keyframes aparecercuatro {
+  0% {
+    margin-top: 15%;
+    opacity: 0; }
+  100% {
+    border-radius: 20px;
+    height: 70%;
+    margin-top: 15%; } }
+
+.carrito {
+  background-color: darkgray;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  z-index: 7;
+  margin-top: 570px;
+  max-height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  scrollbar-color: red red;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 5px 0 5px rgba(0, 0, 0, 0.3); }
+  .carrito .carritocontainer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    border-bottom: 2px solid dimgray; }
+    .carrito .carritocontainer .foto_carrito {
+      width: 20%;
+      height: 100%; }
+    .carrito .carritocontainer .nombre_carrito {
+      margin-left: 20%;
+      font-size: 23px;
+      margin-top: 20px; }
+    .carrito .carritocontainer .precio_carrito {
+      margin-left: 5%;
+      font-size: 23px;
+      margin-top: 20px; }

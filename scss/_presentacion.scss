@@ -1,0 +1,152 @@
+.presentacion{
+width: 100%;
+height: auto;
+display: flex;
+
+padding-top: 10%;
+padding-bottom: 10%;
+background-image: url("../imagenes/fondoPre.png");
+background-attachment: fixed;
+background-size: cover;
+
+         
+
+         .surtidor{width: 15%;
+                   height: 450px;
+                   border-radius: 20px;
+                   animation-name: sur;
+                   animation-duration: 2s;
+                   animation-delay: 0s;
+                   animation-iteration-count: 1;
+                   animation-fill-mode: forwards;
+                   animation-play-state: paused;
+                   transition-duration: 2s;
+                   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3);
+                  
+        }
+         
+        .pioneros{width: 50%;
+          height: 20%;
+            border: 2px solid #bbb;
+            color: #894F01;
+            margin-left: 3%;
+            padding: 1%;
+            border-radius: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 32px;
+            border-radius: 20px;
+            
+            animation-name: aparecerdos;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+
+}
+
+.fotos_usados{margin-left: -50%;
+             width:50% ;
+              
+             
+              
+              
+            
+             .circ{margin-left: 10%;
+                   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), 10px 0 10px rgba(0, 0, 0, 0.3);
+                   
+                   
+            }
+             .foto-1{height: 200px;
+                border-radius: 50%;
+                width: 200px;
+                animation-name: aparecer;
+                animation-duration:2s ;
+                animation-fill-mode: forwards;
+                animation-play-state: paused;
+            }
+             .foto-2{height: 200px;
+                border-radius: 50%;
+                width: 200px;
+                animation-name: aparecertres;
+                animation-duration:3s ;
+                animation-fill-mode: forwards;
+                animation-play-state: paused;}
+             .foto-3{height: 200px;
+                border-radius: 50%;
+                width: 200px;
+                animation-name: aparecercuatro;
+                animation-duration:4s ;
+                animation-fill-mode: forwards;
+                animation-play-state: paused;
+            }
+}
+
+
+.surtidor:hover{height:500px;
+                width:17%;
+}
+
+@keyframes sur{
+     0%{margin-left:-1000px;
+        
+    }
+
+     100%{margin-left: 15%;}
+
+}
+
+
+
+
+@keyframes aparecer {
+    0% {margin-top: 15%;
+      opacity: 0;
+      
+    }
+    
+
+    100%{border-radius: 20px;
+         height: 70%;
+         margin-top: 15%;
+    }
+  }
+
+
+  @keyframes aparecerdos {
+    0% {right: -1000px;
+      opacity: 0;
+    }
+    100% {right: 20%;
+         
+          opacity: 1;
+    }
+  }
+
+  @keyframes aparecertres {
+    0% {margin-top: 15%;
+      opacity: 0;
+      
+    }
+    
+    
+
+    100%{border-radius: 20px;
+         height: 70%;
+         margin-top: 15%;
+    }
+  }
+
+  @keyframes aparecercuatro {
+    0% {margin-top: 15%;
+      opacity: 0;
+      
+    }
+    
+
+    100%{border-radius: 20px;
+         height: 70%;
+         margin-top: 15%;
+    }
+  }
