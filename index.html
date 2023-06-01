@@ -9,6 +9,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
@@ -80,9 +82,10 @@
 
 
 <div class="slidercuatri">
+  
+     <div class="tituloInicial"></div>
+	<div class="fotosIniciales"></div>
 
-<img class="cuatri1" src="imagenes/cuatri1.jpg">
-<img class="cuatri1" src="imagenes/motofoto.jpg">	
 	
 </div>
 
@@ -95,22 +98,22 @@
 <article class="global">
 	
 	<div class="hide_separation"></div>
-	<h1 class="asociacion_title">Marcas de Productos Destacados</h1>
+	<h1 class="asociacion_title"></h1>
 <section class="separation">
-        <img class="asociaciones" src="imagenes/aip.png">
-		<img class="asociaciones" src="imagenes/airoh.png">
-		<img class="asociaciones" src="imagenes/champion.png">
-		<img class="asociaciones" src="imagenes/Captura de pantalla 2023-05-03 213359.png">
-		<img class="asociaciones" src="imagenes/polisport.png">
-		<img class="asociaciones" src="imagenes/super.png">
-		<img class="asociaciones" src="imagenes/tcx.png">
-		<img class="asociaciones" src="imagenes/progrip.jfif">
-		<img class="asociaciones" src="imagenes/ebc.png">
-		<img class="asociaciones" src="imagenes/fym.png">
-
+        <img class="asociaciones" src="imagenes/aip.png" alt="logo aip">
+		<img class="asociaciones" src="imagenes/airoh.png" alt="logo airoh">
+		<img class="asociaciones" src="imagenes/champion.png" alt="logo champion">
+		<img class="asociaciones" src="imagenes/Captura de pantalla 2023-05-03 213359.png" alt="logo">
+		<img class="asociaciones" src="imagenes/polisport.png" alt="logo polisport">
+		<img class="asociaciones" src="imagenes/super.png" alt="logo super">
+		<img class="asociaciones" src="imagenes/tcx.png" alt="logo tcx">
+		<img class="asociaciones" src="imagenes/progrip.jfif" alt="logo progrip">
+		<img class="asociaciones" src="imagenes/ebc.png" alt="logo ebc">
+		<img class="asociaciones" src="imagenes/fym.png" alt="logo fym">
+        <p id="titulos"></p>
 
         
-
+		
 
 </section>
 <div class="separationdos"></div>
@@ -120,15 +123,15 @@
 <section class="presentacion">
 	
 
-    <img class="surtidor" src="imagenes/motosalto.jpg">
-	<h1 class="pioneros">Pioneros en Repuestos usados desde 1997 </h1>
+    <img class = "surtidor" src = "./imagenes/motosalto.jpg">
+	
 	
     <div class="fotos_usados">
 		<img class="foto-1 circ" src="imagenes/motonoche.jpg" alt="cartel">
 		<img class="foto-2 circ" src="imagenes/moto4k.jpg" alt="cartel">
-		<img class="foto-3 circ" src="imagenes/motofoto.jpg" alt="cartel">
+		
 	</div>
-
+  
 </section>
 
 
@@ -151,7 +154,7 @@
 
 <div class="globaldos">
 	
-		<img class="imgProdCost" src="imagenes/3.png">
+		<img class="imgProdCost" src="imagenes/3.png" alt="moto">
 	
 	
 <section class="productos" id="sec">
@@ -160,8 +163,13 @@
 
 
 
+</div>
+<footer></footer>
+
+
     
     <script src="./js/index.js"></script>
+	<script src="./js/llamado.js"></script>
 	<script src="./js/animaciones.js"></script>
 </body>
 </html>

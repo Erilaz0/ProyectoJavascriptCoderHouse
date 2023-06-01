@@ -89,14 +89,46 @@
 .search_button:hover{transform: rotate(360deg)}
 }
 
-.slidercuatri{height: 700px;
+.slidercuatri{height: auto;
               width:100% ;
               display: flex;
+              flex-direction: column;
+              background-image: url("../imagenes/moto4k.jpg");
+              background-size: cover;
+              background-position: bottom;
 
-           .cuatri1{width: 100%;
-                    height: 100%;
-          }
+              .pioneros_title{margin-top: 14%;
+                              margin-left: 5%;
+                              width: 41%;
+                              box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3);
+                              color: #E0E0E0;
+                              border-radius: 10px;
+                              
+              
+              }
 
+              .fotosIniciales{ padding-bottom: 200px;
+              .fotos_inicial{border-radius: 20px;
+                             height: 200px;
+                             width: 220px;
+                             margin-top: 50px;
+                             margin-left: 5%;
+                             transition: 1s;
+
+                             box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3);
+              
+              }
+
+              .fotos_inicial1{animation-name: opacityT;
+                animation-duration: 1s;
+                
+              }
+              .fotos_inicial2{animation-name: opacityT;
+                animation-duration: 2s;}
+              .fotos_inicial3{animation-name: opacityT;
+                animation-duration: 3s;}
+              .fotos_inicial4{animation-name: opacityT;
+                animation-duration: 4s;}}
 }
 
 
@@ -104,10 +136,22 @@
         opacity: 1;
       }
 
-@media only screen and (max-width:993px) {.navbar{background-color: #2B2B2B !important ;
-                                                 height: 60px !important;
+@media only screen and (max-width:993px) {
+  
+  
+  
+  .navbar{background-color: #2B2B2B !important ;
+          height: 60px !important;
+                                                 
         
-      }}
+      }
+
+      .slidercuatri{ 
+        .pioneros_title{margin-top: 200px;
+                        width: 65%;
+         }
+      }
+    }
 
 
 .separationcero{width: 100%;
@@ -173,6 +217,15 @@
                background-color: #2B2B2B;
 }
 
+@keyframes opacityT{
+  0% { opacity: 0; }
+  
+  
+
+  100% { opacity: 1; }
+}
+
+
 
 
 @keyframes asoc{
@@ -228,3 +281,97 @@
                         height: 500px;
           }
 }
+
+@media only screen and(max-width:1581px){
+
+
+
+  .global{
+         
+    
+  
+  
+  
+  
+            
+  
+            .asociacion_title{
+                  font-size: 30px;
+
+
+            }
+
+
+
+}}
+
+
+
+@media only screen and(max-width:606px){
+
+
+  .search{
+    
+    .search_bar{height: 70%}
+
+    .search_button{height: 50px;
+                   width: 60px;
+    }
+
+    .carro_logo{height: 50px;}
+
+}
+     
+
+
+  .global{
+          
+   
+  
+            .asociacion_title{
+                  font-size: 20px;
+                  width: 70%;
+                  margin-left: 16%;
+
+
+            }
+
+
+
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and(max-width:400px){
+
+
+
+  .global{
+         
+    
+  
+  
+  
+  
+            
+  
+            .asociacion_title{
+                  font-size: 20px;
+                  width: 100%;
+                  margin-left: 2%;
+
+
+            }
+
+
+
+}}

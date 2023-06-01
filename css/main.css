@@ -63,12 +63,42 @@
     transform: rotate(360deg); }
 
 .slidercuatri {
-  height: 700px;
+  height: auto;
   width: 100%;
-  display: flex; }
-  .slidercuatri .cuatri1 {
-    width: 100%;
-    height: 100%; }
+  display: flex;
+  flex-direction: column;
+  background-image: url("../imagenes/moto4k.jpg");
+  background-size: cover;
+  background-position: bottom; }
+  .slidercuatri .pioneros_title {
+    margin-top: 14%;
+    margin-left: 5%;
+    width: 41%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3);
+    color: #E0E0E0;
+    border-radius: 10px; }
+  .slidercuatri .fotosIniciales {
+    padding-bottom: 200px; }
+    .slidercuatri .fotosIniciales .fotos_inicial {
+      border-radius: 20px;
+      height: 200px;
+      width: 220px;
+      margin-top: 50px;
+      margin-left: 5%;
+      transition: 1s;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3); }
+    .slidercuatri .fotosIniciales .fotos_inicial1 {
+      animation-name: opacityT;
+      animation-duration: 1s; }
+    .slidercuatri .fotosIniciales .fotos_inicial2 {
+      animation-name: opacityT;
+      animation-duration: 2s; }
+    .slidercuatri .fotosIniciales .fotos_inicial3 {
+      animation-name: opacityT;
+      animation-duration: 3s; }
+    .slidercuatri .fotosIniciales .fotos_inicial4 {
+      animation-name: opacityT;
+      animation-duration: 4s; }
 
 .slider img.active {
   opacity: 1; }
@@ -76,7 +106,10 @@
 @media only screen and (max-width: 993px) {
   .navbar {
     background-color: #2B2B2B !important;
-    height: 60px !important; } }
+    height: 60px !important; }
+  .slidercuatri .pioneros_title {
+    margin-top: 200px;
+    width: 65%; } }
 
 .separationcero {
   width: 100%;
@@ -125,6 +158,12 @@
   margin-top: 10%;
   background-color: #2B2B2B; }
 
+@keyframes opacityT {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @keyframes asoc {
   0% {
     opacity: 0; }
@@ -167,6 +206,29 @@
   .supermoto .second_moto {
     width: 100%;
     height: 500px; }
+
+@media only screen and (max-width: 1581px) {
+  .global .asociacion_title {
+    font-size: 30px; } }
+
+@media only screen and (max-width: 606px) {
+  .search .search_bar {
+    height: 70%; }
+  .search .search_button {
+    height: 50px;
+    width: 60px; }
+  .search .carro_logo {
+    height: 50px; }
+  .global .asociacion_title {
+    font-size: 20px;
+    width: 70%;
+    margin-left: 16%; } }
+
+@media only screen and (max-width: 400px) {
+  .global .asociacion_title {
+    font-size: 20px;
+    width: 100%;
+    margin-left: 2%; } }
 
 body {
   background-color: #EEEEEE; }
@@ -266,6 +328,56 @@ body {
   margin-top: 0%;
   border: 3px solid #343434; }
 
+@media only screen and (max-width: 1581px) {
+  .globaldos .imgProdCost {
+    width: 30%;
+    margin-left: 12%; } }
+
+@media only screen and (max-width: 1200px) {
+  .globaldos .imgProdCost {
+    width: 30%;
+    margin-left: 5%; }
+  .globaldos .productos {
+    width: 100%; } }
+
+@media only screen and (max-width: 988px) {
+  .globaldos .imgProdCost {
+    display: none; }
+  .globaldos .productos {
+    width: 100%;
+    padding-left: 10%; } }
+
+@media only screen and (max-width: 835px) {
+  .globaldos {
+    justify-items: center; }
+    .globaldos .imgProdCost {
+      display: none; }
+    .globaldos .productos {
+      width: 100%;
+      padding-left: 7%; } }
+
+@media only screen and (max-width: 800px) {
+  .globaldos {
+    justify-items: center; }
+    .globaldos .imgProdCost {
+      display: none; }
+    .globaldos .productos {
+      width: 80%;
+      padding-left: 9%; }
+      .globaldos .productos .productI {
+        width: 100%; } }
+
+@media only screen and (max-width: 500px) {
+  .globaldos {
+    justify-items: center; }
+    .globaldos .imgProdCost {
+      display: none; }
+    .globaldos .productos {
+      width: 100%;
+      padding-left: 0%; }
+      .globaldos .productos .productI {
+        width: 100%; } }
+
 .presentacion {
   width: 100%;
   height: auto;
@@ -274,116 +386,54 @@ body {
   padding-bottom: 10%;
   background-image: url("../imagenes/fondoPre.png");
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  /*.pioneros{width: 50%;
+          height: 20%;
+            border: 2px solid #bbb;
+            color: #894F01;
+            margin-left: 3%;
+            padding: 1%;
+            border-radius: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 32px;
+            border-radius: 20px;
+            
+            animation-name: aparecerdos;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+*/ }
   .presentacion .surtidor {
-    width: 15%;
+    width: 50%;
     height: 450px;
     border-radius: 20px;
-    animation-name: sur;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-    transition-duration: 2s;
+    margin-left: 5%;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3), 8px 0 8px rgba(0, 0, 0, 0.3); }
-  .presentacion .pioneros {
-    width: 50%;
-    height: 20%;
-    border: 2px solid #bbb;
-    color: #894F01;
-    margin-left: 3%;
-    padding: 1%;
-    border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 32px;
-    border-radius: 20px;
-    animation-name: aparecerdos;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; }
 
 .fotos_usados {
-  margin-left: -50%;
   width: 50%; }
   .fotos_usados .circ {
     margin-left: 10%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), 10px 0 10px rgba(0, 0, 0, 0.3); }
   .fotos_usados .foto-1 {
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; }
+    height: 100%;
+    width: 30%; }
   .fotos_usados .foto-2 {
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
-    animation-name: aparecertres;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; }
-  .fotos_usados .foto-3 {
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
-    animation-name: aparecercuatro;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; }
+    height: 100%;
+    width: 30%; }
 
-.surtidor:hover {
-  height: 500px;
-  width: 17%; }
-
-@keyframes sur {
-  0% {
-    margin-left: -1000px; }
-  100% {
-    margin-left: 15%; } }
-
-@keyframes aparecer {
-  0% {
-    margin-top: 15%;
-    opacity: 0; }
-  100% {
-    border-radius: 20px;
-    height: 70%;
-    margin-top: 15%; } }
-
-@keyframes aparecerdos {
-  0% {
-    right: -1000px;
-    opacity: 0; }
-  100% {
-    right: 20%;
-    opacity: 1; } }
-
-@keyframes aparecertres {
-  0% {
-    margin-top: 15%;
-    opacity: 0; }
-  100% {
-    border-radius: 20px;
-    height: 70%;
-    margin-top: 15%; } }
-
-@keyframes aparecercuatro {
-  0% {
-    margin-top: 15%;
-    opacity: 0; }
-  100% {
-    border-radius: 20px;
-    height: 70%;
-    margin-top: 15%; } }
+@media only screen and (max-width: 1581px) {
+  .presentacion .surtidor {
+    width: 40%;
+    height: 20%;
+    margin-left: 12%; } }
 
 .carrito {
   background-color: darkgray;
-  width: 30%;
+  width: 500px;
   height: auto;
   position: absolute;
   z-index: 7;
@@ -398,15 +448,128 @@ body {
     width: 100%;
     height: 10%;
     display: flex;
-    border-bottom: 2px solid dimgray; }
+    border-bottom: 2px solid dimgray;
+    background-color: #000000; }
     .carrito .carritocontainer .foto_carrito {
-      width: 20%;
-      height: 100%; }
+      width: 50px;
+      height: 50px; }
+    .carrito .carritocontainer .cantidad {
+      margin-left: 10px;
+      margin-top: 10px;
+      color: green;
+      font-size: 20px; }
     .carrito .carritocontainer .nombre_carrito {
-      margin-left: 20%;
-      font-size: 23px;
-      margin-top: 20px; }
+      margin-left: 2%;
+      font-size: 20px;
+      margin-top: 14px;
+      color: green; }
     .carrito .carritocontainer .precio_carrito {
       margin-left: 5%;
       font-size: 23px;
-      margin-top: 20px; }
+      margin-top: 5px;
+      color: green; }
+    .carrito .carritocontainer .botonsito {
+      height: 20px;
+      width: 20px;
+      margin-top: 17px;
+      margin-left: 10px;
+      background-image: url("../imagenes/ok.jfif");
+      background-size: contain; }
+  .carrito .barra_opciones_carrito {
+    z-index: 2;
+    bottom: 300px;
+    width: 500px;
+    height: 50px;
+    background-color: #4F4F4F;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; }
+    .carrito .barra_opciones_carrito .vaciar_carrito {
+      height: 45px;
+      width: 45px;
+      background-image: url("../imagenes/tacho.png");
+      background-size: contain;
+      border-radius: 7px;
+      margin-left: 2%;
+      margin-top: 2px; }
+    .carrito .barra_opciones_carrito .precioconjuntodiv {
+      height: 45px;
+      width: 45px;
+      border-radius: 7px;
+      padding-left: 5%; }
+      .carrito .barra_opciones_carrito .precioconjuntodiv .preciototal {
+        color: black;
+        font-size: 30px; }
+    .carrito .barra_opciones_carrito .boton_de_salir {
+      height: 45px;
+      width: 45px;
+      background-image: url("../imagenes/salir.png");
+      background-size: cover;
+      border-radius: 7px;
+      margin-left: 2%;
+      margin-top: 2px; }
+    .carrito .barra_opciones_carrito .confirmar_compra {
+      height: 45px;
+      width: 45px;
+      background-image: url("../imagenes/tik.jpg");
+      background-size: contain;
+      border-radius: 7px;
+      margin-top: 2px;
+      margin-left: 2%; }
+
+footer {
+  width: 100%;
+  background-color: #4F4F4F;
+  position: relative;
+  bottom: 0; }
+
+@media only screen and (max-width: 706px) {
+  .carrito {
+    width: 400px; }
+    .carrito .carritocontainer .nombre_carrito {
+      font-size: 16px; }
+    .carrito .carritocontainer .cantidad {
+      font-size: 16px; } }
+
+@media only screen and (max-width: 406px) {
+  .carrito {
+    width: 300px; }
+    .carrito .carritocontainer .foto_carrito {
+      width: 40px;
+      height: 40px; }
+    .carrito .carritocontainer .precio_carrito {
+      font-size: 13px;
+      margin-top: 14px; }
+    .carrito .carritocontainer .nombre_carrito {
+      font-size: 13px; }
+    .carrito .carritocontainer .cantidad {
+      font-size: 10px;
+      margin-top: 16px; }
+    .carrito .barra_opciones_carrito .confirmar_compra {
+      height: 30px;
+      width: 30px;
+      margin-top: 10px; }
+    .carrito .barra_opciones_carrito .boton_de_salir {
+      height: 30px;
+      margin-top: 10px;
+      width: 30px; }
+    .carrito .barra_opciones_carrito .vaciar_carrito {
+      height: 30px;
+      margin-top: 10px;
+      width: 30px; }
+    .carrito .barra_opciones_carrito .precioconjuntodiv {
+      height: 35px;
+      width: 35px;
+      border-radius: 7px;
+      padding-left: 5%;
+      margin-top: 10px; }
+      .carrito .barra_opciones_carrito .precioconjuntodiv .preciototal {
+        color: black;
+        font-size: 20px; } }
+
+@media only screen and (max-height: 650px) {
+  .carrito {
+    margin-top: 480px;
+    height: 490px; } }

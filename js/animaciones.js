@@ -1,79 +1,27 @@
+const fotoInicial = document.getElementsByClassName("tituloInicial")[0]
 
-
-
-var elementoAnimado = document.getElementsByClassName("surtidor")[0]
-
-function activarAnimacion() {
-  var posicionElemento = elementoAnimado.getBoundingClientRect().top;
-  var posicionVentana = window.innerHeight || document.documentElement.clientHeight;
-  
-  if (posicionElemento < posicionVentana) {
-    elementoAnimado.style.animationPlayState = "running";
-  }
-}
-
-window.addEventListener("scroll", activarAnimacion);
+setTimeout (()=>{
+     let pionerosTitle = document.createElement("h1")
+     pionerosTitle.classList.add("pioneros_title")
+     pionerosTitle.innerText += `Pioneros en Repuestos usados desde 1997`
+     fotoInicial.appendChild(pionerosTitle)
+              
 
 
 
 
+},1000)
 
-// animaciones pagina intermedia animaciones pagina intermedia animaciones pagina intermedia animaciones pagina intermedia animaciones pagina intermedia
-
-
-
-const logos = document.querySelectorAll('.fade');
-
-let delay = 0;
-
-logos.forEach((logo) => {
-  setTimeout(() => {
-    logo.classList.add('show');
-  }, delay);
-
-  delay += 100;
-});
-
-let element
-let pocisionAct
-let pocisionNav
-function opaty(element){
-
-  element = document.querySelector(element)
-  pocisionAct = element.getBoundingClientRect().top
-  pocisionNav = window.innerHeight
-
-  if (pocisionAct < pocisionNav){
-    
-    element.style.animationPlayState = "running";
-  }
-
-   
-
-}
-
-window.addEventListener("scroll",function(){opaty(".foto-1")})
-window.addEventListener("scroll",function(){opaty(".foto-2")})
-window.addEventListener("scroll",function(){opaty(".foto-3")})
+const divFotosIniciales = document.getElementsByClassName("fotosIniciales")[0]
 
 
-let elemento_pioneros
-let ub_elemento_pioneros
-let ubtop_elemento_pioneros
-
-function op(elem){
-   elemento_pioneros = document.querySelector(elem)
-   ub_elemento_pioneros = elemento_pioneros.getBoundingClientRect().top;
-   ubtop_elemento_pioneros = window.innerHeight
-
-   if (ub_elemento_pioneros < ubtop_elemento_pioneros){
-
-        elemento_pioneros.style.animationPlayState = "running"
-
-   }
-
-}
-window.addEventListener("scroll",function(){op(".pioneros")})
+setTimeout(()=>{
+      divFotosIniciales.innerHTML += `
+     <img class = "fotos_inicial fotos_inicial1" src = "./imagenes/guardabarrosv.jpg">
+     <img class = "fotos_inicial fotos_inicial2" src = "./imagenes/cascov.jfif">
+     <img class = "fotos_inicial fotos_inicial3" src = "./imagenes/manillarv.jpg">
+     <img class = "fotos_inicial fotos_inicial4" src = "./imagenes/cubremanillares.jpg">                               `
+},1000)
 
 
 
@@ -81,6 +29,53 @@ window.addEventListener("scroll",function(){op(".pioneros")})
 
 
 
-// animacion pagina intermedia final animacion pagina intermedia final animacion pagina intermedia final animacion pagina intermedia final
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
