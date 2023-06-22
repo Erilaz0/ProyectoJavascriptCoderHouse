@@ -421,6 +421,10 @@ function agregarAlCarrito(id){
       
     }
     else{ //en esta seccion añadimos al local storage el producto y si esta el carrito en la pantalla los cargamos ahi
+      
+     let confirmacionDeCarrito = document.getElementsByClassName("carrito")[0];
+     if(confirmacionDeCarrito){ 
+      carro_escena.click();
      agregarStorage = JSON.stringify(objetoEncontrado);
      localStorage.setItem(objetoEncontrado.id,agregarStorage);
      devolverStorage = localStorage.getItem(objetoEncontrado.id);
@@ -463,13 +467,13 @@ function agregarAlCarrito(id){
 
        
          
-       })
+     })
        quitarBarraCarrito();
        barraCarrito();
        carro_escena.click();
      
       break;
-    }}
+    }}}
     
 
   };
@@ -687,8 +691,10 @@ for( let i = 0 ; i < carritoPrecio.length ; i++){
  function quitarBarraCarrito(){ // creamos la funcion que elimina la barra de opciones del carrito, esto evitara que quede en otro lado q no sea abajo del todo
          
          let quitarOpcionesDelCarrito = document.getElementsByClassName("barra_opciones_carrito")[0];
-         let quitarOpcionesDelCarritoDos = quitarOpcionesDelCarrito.parentNode;
-         quitarOpcionesDelCarritoDos.removeChild(quitarOpcionesDelCarrito);
+         
+          if (quitarOpcionesDelCarrito && quitarOpcionesDelCarrito.parentNode){ 
+          carroGlobal.removeChild(quitarOpcionesDelCarrito);
+          }
 
 
  };
